@@ -9,7 +9,6 @@ void test_scope() {
     global_var++;
     static_var++;
     local_var++;
-
     printf("global_var : %d\n",global_var);
     printf("static_var : %d\n",static_var);
     printf("local_var : %d\n",local_var);
