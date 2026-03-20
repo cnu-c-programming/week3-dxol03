@@ -9,9 +9,13 @@ void my_sum(char c,int count, ...) {
 
     if(c == 'S') {
         for (int i = 0; i < count; i++) {
-            printf("%s ",(va_arg(ap,char*)));
+            printf("%s",(va_arg(ap,char*)));
+            if (i < count -1) {
+                printf(" ");
+             }
         }
         printf("\n");
+        
     } else if (c == 'C') {
         for (int i = 0; i < count; i++) {
             printf("%c",(va_arg(ap, int)));
